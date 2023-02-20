@@ -1,4 +1,4 @@
-const {users,movies} = require("../../models");
+const {users, movies} = require("../../models");
 const {Op} = require("sequelize");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -6,15 +6,20 @@ const jwt = require("jsonwebtoken");
 const registration = async (req, res) => {
     const {name, email, phone, password, date, month, year, gender, region, prefer_site, avatar, type} = req.body
     try {
+
         const salt = bcrypt.genSaltSync(10)
         const hashPassword = bcrypt.hashSync(password, salt)
+
         const newUser = await users.create({
             name, email, phone, password: hashPassword, date, month, year,
             gender, region, prefer_site, avatar, type
         })
         res.status(200).send(newUser)
+
     } catch (e) {
-        res.status(401).send(e)
+        res.status(500).send({
+            message: "Server is Error !"
+        })
     }
 
 }
@@ -46,4 +51,4 @@ const uploadAvatar = async (req, res) => {
     res.status(201).send(userFound)
 }
 
-module.exports = {registration, login,uploadAvatar}
+module.exports = {registration, login, uploadAvatar}
