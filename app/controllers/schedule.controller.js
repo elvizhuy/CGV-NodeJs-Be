@@ -12,9 +12,7 @@ const getScheduleByDate = async (req, res) => {
                 }
             }
         })
-        res.
-
-
+        res.status(201).send(schedulesByDate)
 
     } catch (e) {
         res.status(401).send('Sorry no date found')
