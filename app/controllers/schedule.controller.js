@@ -12,7 +12,6 @@ const getScheduleByDate = async (req, res) => {
                 }
             }
         })
-        res.
 
 
 
