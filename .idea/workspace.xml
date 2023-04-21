@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a322aa5-8b91-4f82-bb76-092a06950f48" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/schedule.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/schedule.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cgv-movie-fe" beforeDir="false" afterPath="$PROJECT_DIR$/../cgv-movie-fe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.16.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.12&quot;,
-    &quot;last_opened_file_path&quot;: &quot;P:/VUE/CGV/cgv-movie-be&quot;,
+    &quot;last_opened_file_path&quot;: &quot;P:/Aptech-Project-Session01/aptech-vue-fe&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -77,6 +77,9 @@
       <workItem from="1676465806449" duration="4832000" />
       <workItem from="1676627058257" duration="12085000" />
       <workItem from="1676649627427" duration="5334000" />
+      <workItem from="1677269158466" duration="35000" />
+      <workItem from="1680856190009" duration="957000" />
+      <workItem from="1680861705961" duration="7000" />
     </task>
     <servers />
   </component>

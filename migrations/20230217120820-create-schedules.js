@@ -1,59 +1,59 @@
-'use strict';
+"use strict";
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('schedules', {
+    await queryInterface.createTable("schedules", {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       start_date: {
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       start_time: {
-        type: Sequelize.TIME
+        type: Sequelize.TIME,
       },
       movie_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'movies',
-          key: 'id'
-        }
+          model: "movies",
+          key: "id",
+        },
       },
-      format_id:{
-        type:Sequelize.INTEGER,
+      format_id: {
+        type: Sequelize.INTEGER,
         references: {
-          model: 'formats',
-          key: 'id'
-        }
+          model: "formats",
+          key: "id",
+        },
       },
-      room_id:{
-        type:Sequelize.INTEGER,
+      room_id: {
+        type: Sequelize.INTEGER,
         references: {
-          model: 'rooms',
-          key: 'id'
-        }
+          model: "rooms",
+          key: "id",
+        },
       },
-      cinema_id:{
-        type:Sequelize.INTEGER,
+      cinema_id: {
+        type: Sequelize.INTEGER,
         references: {
-          model: 'cinemas',
-          key: 'id'
-        }
+          model: "cinemas",
+          key: "id",
+        },
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: Sequelize.DATE,
+      },
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('schedules');
-  }
+    await queryInterface.dropTable("schedules");
+  },
 };

@@ -1,49 +1,613 @@
-'use strict';
+"use strict";
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-    async up(queryInterface, Sequelize) {
-        /**
-         * Add seed commands here.
-         *
-         * Example:
-         * await queryInterface.bulkInsert('People', [{
-         *   name: 'John Doe',
-         *   isBetaMember: false
-         * }], {});
-         */
-        await queryInterface.bulkInsert('cinemas', [
-            {
+  async up(queryInterface, Sequelize) {
+    /**
+     * Add seed commands here.
+     *
+     * Example:
+     * await queryInterface.bulkInsert('People', [{
+     *   name: 'John Doe',
+     *   isBetaMember: false
+     * }], {});
+     */
+    await queryInterface.bulkInsert(
+      "cinemas",
+      [
+        {
+          name: "CGV Vincom Long Biên",
+          address: "Long Biên HN",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Bà Triệu",
+          address: "Bà Triệu HN",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Ocean Park",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Mipec Tower",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Hồ Gươm Plaza",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Aeon Long Biên",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Nguyễn Chí Thanh",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Indochina Plaza Hà Nội",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Rice City",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Hà Nội Centerpoint",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Mac Plaza (Machinco)",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Times City",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Royal City",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Trương Định Plaza",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Tràng Tiền Plaza",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Sun Grand Thụy Khuê",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Sun Grand Lương Yên",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Sky Lake Phạm Hùng",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Xuân Diệu",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Metropolis Liễu Giai",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Bắc Từ Liêm",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Trần Duy Hưng",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Aeon Hà Đông",
+          address: "Hà Nội",
+          city_id: 1,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Hùng Vương Plaza",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Crescent Mall",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Thảo Điền Pearl",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Thủ Đức",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Đồng Khởi",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Liberty Citypoint",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Pearl Plaza",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vivo City",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Gò Vấp",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Aeon Tân Phú",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Pandora City",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Menas Mall (CGV CT Plaza)",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Hoàng Văn Thụ",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Aeon Bình Tân",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Saigonres Nguyễn Xí",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Parkson Đồng Khởi",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Giga Mall Thủ Đức",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Satra Củ Chi",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Center Landmark 81",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Sư Vạn Hạnh",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Lý Chính Thắng",
+          address: "Thành Phố Hồ Chí Minh",
+          city_id: 2,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Đà Nẵng",
+          address: "Thành Phố Đà Nẵng",
+          city_id: 3,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vĩnh Trung Plaza",
+          address: "Thành Phố Đà Nẵng",
+          city_id: 3,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Hùng Vương",
+          address: "Thành Phố Cần Thơ",
+          city_id: 4,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Xuân Khánh",
+          address: "Thành Phố Cần Thơ",
+          city_id: 4,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Sense City",
+          address: "Thành Phố Cần Thơ",
+          city_id: 4,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Big C Đồng Nai",
+          address: "Đồng Nai",
+          city_id: 5,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Coopmart Biên Hòa",
+          address: "Đồng Nai",
+          city_id: 5,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Aeon Mall Hải Phòng",
+          address: "Hải Phòng",
+          city_id: 7,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Hải Phòng",
+          address: "Hải Phòng",
+          city_id: 7,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Hạ Long",
+          address: "Quảng Ninh",
+          city_id: 8,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Móng Cái",
+          address: "Quảng Ninh",
+          city_id: 8,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Cẩm Phả",
+          address: "Quảng Ninh",
+          city_id: 8,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Lapen Center Vũng Tàu",
+          address: "Bà Rịa - Vũng Tàu",
+          city_id: 9,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Lam Sơn Square",
+          address: "Bà Rịa - Vũng Tàu",
+          city_id: 9,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Kim Cúc Plaza",
+          address: "Bình Định",
+          city_id: 10,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Aeon Canary",
+          address: "Bình Dương",
+          city_id: 10,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Bình Dương Square",
+          address: "Bình Dương",
+          city_id: 10,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Buôn Mê Thuột",
+          address: "Đắk Lắk",
+          city_id: 16,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Trà Vinh",
+          address: "Trà Vinh",
+          city_id: 15,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Yên Bái",
+          address: "Yên Bái",
+          city_id: 14,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Vĩnh Long",
+          address: "Vĩnh Long",
+          city_id: 13,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Rạch Giá",
+          address: "Kiên Giang",
+          city_id: 12,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Ecopark Hưng Yên",
+          address: "Hưng Yên",
+          city_id: 21,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Cao Lãnh",
+          address: "Đồng Tháp",
+          city_id: 20,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Phú Yên",
+          address: "Phú Yên",
+          city_id: 19,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Ha Tinh",
+          address: "Hà Tĩnh",
+          city_id: 18,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Vi Thanh",
+          address: "Hậu Giang",
+          city_id: 17,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Big C Nha Trang",
+          address: "Khánh Hòa",
+          city_id: 26,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Kon Tum",
+          address: "Kon Tum",
+          city_id: 25,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Lạng Sơn",
+          address: "Lạng Sơn",
+          city_id: 24,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vinh Centre",
+          address: "Nghệ An",
+          city_id: 23,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Happyland Việt Trì",
+          address: "Phú Thọ",
+          city_id: 22,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Thái Nguyên",
+          address: "Thái Nguyên",
+          city_id: 31,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Tây Ninh",
+          address: "Tây Ninh",
+          city_id: 30,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Sơn La",
+          address: "Sơn La",
+          city_id: 29,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Sóc Trăng",
+          address: "Sóc Trăng",
+          city_id: 28,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Quảng Ngãi",
+          address: "Quảng Ngãi",
+          city_id: 27,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV Vincom Mỹ Tho",
+          address: "Tiền Giang",
+          city_id: 32,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+        {
+          name: "CGV GO! Mỹ Tho",
+          address: "Tiền Giang",
+          city_id: 32,
+          createdAt: "2023-02-14 07:11:41",
+          updatedAt: "2023-02-14 07:11:41",
+        },
+      ],
+      {}
+    );
+  },
 
-                name: "CGV Long Biên",
-                address: "Long Biên HN",
-                createdAt: '2023-02-14 07:11:41',
-                updatedAt: '2023-02-14 07:11:41'
-            },
-            {
-
-                name: "CGV Vincom Long Biên",
-                address: "Long Biên HN",
-                createdAt: '2023-02-14 07:11:41',
-                updatedAt: '2023-02-14 07:11:41'
-            },
-            {
-
-                name: "CGV Vincom Bà Triệu",
-                address: "Bà Triệu HN",
-                createdAt: '2023-02-14 07:11:41',
-                updatedAt: '2023-02-14 07:11:41'
-            },
-        ], {});
-    },
-
-    async down(queryInterface, Sequelize) {
-        /**
-         * Add commands to revert seed here.
-         *
-         * Example:
-         * await queryInterface.bulkDelete('People', null, {});
-         */
-        await queryInterface.bulkDelete('cinemas', null, {});
-    }
+  async down(queryInterface, Sequelize) {
+    /**
+     * Add commands to revert seed here.
+     *
+     * Example:
+     * await queryInterface.bulkDelete('People', null, {});
+     */
+    await queryInterface.bulkDelete("cinemas", null, {});
+  },
 };
