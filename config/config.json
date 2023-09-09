@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "Huynndd",
-    "password": "Daniel@0908",
+    "username": "root",
+    "password": "Huynn@0908",
     "database": "cgv_movie",
     "host": "127.0.0.1",
     "dialect": "mysql"
